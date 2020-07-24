@@ -16,12 +16,12 @@ Typescript version: 3.7.2
 
 Model:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/efb57860-f25a-4283-9b6c-273e7790dd16/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/efb57860-f25a-4283-9b6c-273e7790dd16/Untitled.png)
+![Model image](https://github.com/matsmello/leapsome/tree/master/src/assets/sample.png?true)
 
 I am a Software Engineer and I am looking for a job on Berlin, create those projects helps me to practice and learn few concepts. Maybe also improve their business with me opinion and extra designs.
-
+https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true
 Final results:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f865e67-5634-43dc-90f7-f4d8a7b259cd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f865e67-5634-43dc-90f7-f4d8a7b259cd/Untitled.png)
+![Final results](https://github.com/matsmello/leapsome/tree/master/src/assets/finalResults.png?true)
 
 [LinkedIn](https://www.linkedin.com/in/melloo/)
