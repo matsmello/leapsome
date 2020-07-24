@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  flex: 1;
+  display: flex;
+  border: 1px solid black;
+`;
 export const SideMenu = styled.div`
   max-width: 280px;
 
