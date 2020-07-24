@@ -16,6 +16,7 @@ const Main: React.FC = () => (
         <h1>Lucy Andrews</h1>
         <strong>Head of Sales</strong>
       </header>
+
       <Button icon={FiSettings}></Button>
 
       <h3>Direct colleagues</h3>
