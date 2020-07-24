@@ -1,4 +1,10 @@
 import React from "react";
+import Button from "./../../components/Button";
+import SimpleListItem from "./../../components/SimpleListItem";
+import ListItem from "./../../components/ListItem";
+import Card from "./../../components/Card";
+
+import { SideMenu, Container } from "./styles";
 
 const Main: React.FC = () => (
   <Container>
