@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./../../components/Button/index";
 import SimpleListItem from "./../../components/SimpleListItem";
-import ListItem from "./../../components/ListItem";
+import ListItem from "./../../components/ListItem/index";
 import Card from "./../../components/Card";
 import model from "./../../assets/me.jpeg";
 
@@ -27,7 +27,9 @@ const Main: React.FC = () => (
       <header>
         <h1>Good evening, Lucy! 👋</h1>
       </header>
+
       <ListItem />
+
       <footer>
         <strong>MORE</strong>
       </footer>
