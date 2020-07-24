@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./../../components/Button/index";
 import SimpleListItem from "./../../components/SimpleListItem";
 import ListItem from "./../../components/ListItem/index";
@@ -8,33 +8,61 @@ import model from "./../../assets/me.jpeg";
 import { FiSettings } from "react-icons/fi";
 import { SideMenu, Container } from "./styles";
 
-const Main: React.FC = () => (
-  <Container>
-    <SideMenu>
-      <header>
-        <img src={model} />
-        <h1>Lucy Andrews</h1>
-        <strong>Head of Sales</strong>
-      </header>
+const Main: React.FC = () => {
+  const [examples] = useState([
+    {
+      message: "Lucy, please write your assessment for Daniel Goldstein",
+      createdAt: "5 hours ago",
+      actions: ["New", "To Do"],
+    },
+    {
+      message: "Lucy, please select your peers",
+      createdAt: "6 hours ago",
+      actions: ["To Do"],
+    },
+    {
+      message: "Lucy, please complete your self-assessments",
+      createdAt: "8 hours ago",
+      actions: ["New", "To Do"],
+    },
+    {
+      message:
+        "Leapsome Videos Demos needs your input - please answer a few question as soon as possible",
+      createdAt: "10 hours ago",
+      actions: ["New"],
+    },
+  ]);
 
-      <Button icon={FiSettings}></Button>
+  return (
+    <Container>
+      <SideMenu>
+        <header>
+          <img src={model} />
+          <h1>Lucy Andrews</h1>
+          <strong>Head of Sales</strong>
+        </header>
 
-      <h3>Direct colleagues</h3>
-      <SimpleListItem />
-      <SimpleListItem />
-    </SideMenu>
-    <Card>
-      <header>
-        <h1>Good evening, Lucy! 👋</h1>
-      </header>
+        <Button icon={FiSettings}></Button>
 
-      <ListItem />
+        <h3>Direct colleagues</h3>
+        <SimpleListItem />
+        <SimpleListItem />
+      </SideMenu>
+      <Card>
+        <header>
+          <h1>Good evening, Lucy! 👋</h1>
+        </header>
 
-      <footer>
-        <strong>MORE</strong>
-      </footer>
-    </Card>
-  </Container>
-);
+        {examples.map((example) => (
+          <ListItem message={example.message} createdAt={example.createdAt} />
+        ))}
+
+        <footer>
+          <strong>MORE</strong>
+        </footer>
+      </Card>
+    </Container>
+  );
+};
 
 export default Main;

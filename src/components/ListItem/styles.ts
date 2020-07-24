@@ -41,4 +41,8 @@ export const Container = styled.div`
   &:hover {
     transform: translate(10px);
   }
+
+  & + div {
+    margin-top: 10px;
+  }
 `;

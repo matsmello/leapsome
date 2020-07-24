@@ -4,7 +4,6 @@ export const Container = styled.div`
   background-color: white;
   display: block;
   flex: 1;
-  max-height: 400px;
   margin: 30px;
   padding: 30px;
   border-radius: 10px;
@@ -17,11 +16,12 @@ export const Container = styled.div`
     font-size: 22px;
     margin-bottom: 20px;
   }
+
   transition: 0.3s box-shadow ease-in-out;
 
   &:hover {
-    -webkit-box-shadow: 7px 14px 16px 1px rgb(92, 131, 240);
-    -moz-box-shadow: 7px 14px 16px 1px rgb(92, 131, 240);
-    box-shadow: 7px 14px 16px 1px rgb(92, 131, 240);
+    -webkit-box-shadow: 7px 7px 16px 1px rgb(92, 131, 240);
+    -moz-box-shadow: 7px 7px 16px 1px rgb(92, 131, 240);
+    box-shadow: 7px 7px 16px 1px rgb(92, 131, 240);
   }
 `;

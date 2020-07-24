@@ -3,15 +3,20 @@ import { Container } from "./styles";
 import MiniButton from "../MiniButton";
 import meAgain from "./../../assets/meAgain.jpeg";
 
-const ListItem: React.FC = () => (
+interface ListItemProps {
+  message: string;
+  createdAt: string;
+}
+
+const ListItem: React.FC<ListItemProps> = (props) => (
   <Container>
     <img src={meAgain} />
     <div>
-      <strong>Lucy, please write your assessment for Daniel Goldstein</strong>
+      <strong>{props.message}</strong>
       <div>
         <MiniButton>New</MiniButton>
         <MiniButton>To Do</MiniButton>
-        <p>5 hours ago</p>
+        <p>{props.createdAt}</p>
       </div>
     </div>
     <MiniButton>Show</MiniButton>
