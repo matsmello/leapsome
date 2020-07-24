@@ -16,12 +16,12 @@ Typescript version: 3.7.2
 
 Model:
 
-![Model image](https://github.com/matsmello/leapsome/tree/master/src/assets/sample.png?true)
+![Model image](https://github.com/matsmello/leapsome/tree/master/src/assets/sample.png?raw=true)
 
 I am a Software Engineer and I am looking for a job on Berlin, create those projects helps me to practice and learn few concepts. Maybe also improve their business with me opinion and extra designs.
 https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true
 Final results:
 
-![Final results](https://github.com/matsmello/leapsome/tree/master/src/assets/finalResults.png?true)
+![Final results](https://github.com/matsmello/leapsome/tree/master/src/assets/finalResults.png?raw=true)
 
 [LinkedIn](https://www.linkedin.com/in/melloo/)
