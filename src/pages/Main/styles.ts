@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 export const SideMenu = styled.div`
-  border: solid 1px black;
   max-width: 280px;
 
   header {

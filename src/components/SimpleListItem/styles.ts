@@ -7,7 +7,6 @@ export const Container = styled.div`
   place-content: center;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   height: 80px;
 
   img {
