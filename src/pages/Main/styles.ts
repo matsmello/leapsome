@@ -4,6 +4,21 @@ export const Container = styled.div`
   flex: 1;
   display: flex;
   border: 1px solid black;
+
+  footer {
+    padding: 25px 0;
+    color: rgb(200, 200, 200);
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .card {
+    flex-direction: row;
+  }
 `;
 export const SideMenu = styled.div`
   max-width: 280px;

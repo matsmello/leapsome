@@ -5,7 +5,7 @@ import ListItem from "./../../components/ListItem/index";
 import Card from "./../../components/Card";
 import model from "./../../assets/me.jpeg";
 
-import { FiSettings } from "react-icons/fi";
+import { FiSettings, FiChevronDown } from "react-icons/fi";
 import { SideMenu, Container } from "./styles";
 
 const Main: React.FC = () => {
@@ -48,19 +48,11 @@ const Main: React.FC = () => {
         <SimpleListItem />
         <SimpleListItem />
       </SideMenu>
-      <Card>
-        <header>
-          <h1>Good evening, Lucy! 👋</h1>
-        </header>
 
-        {examples.map((example) => (
-          <ListItem message={example.message} createdAt={example.createdAt} />
-        ))}
-
-        <footer>
-          <strong>MORE</strong>
-        </footer>
-      </Card>
+      <section>
+        <Card title="Good evening, Lucy! 👋" listItems={examples} />
+        <Card title="Good evening, Lucy! 👋" listItems={examples} />
+      </section>
     </Container>
   );
 };

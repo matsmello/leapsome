@@ -7,7 +7,8 @@ export const Container = styled.div`
   place-content: center;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
+  color: rgb(131, 131, 131);
 
   img {
     height: 60px;
@@ -32,6 +33,8 @@ export const Container = styled.div`
 
       p {
         margin-left: 10px;
+        margin-top: 4px;
+        color: rgb(180, 180, 180);
       }
     }
   }
