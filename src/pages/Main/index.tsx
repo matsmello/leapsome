@@ -1,10 +1,11 @@
 import React from "react";
-import Button from "./../../components/Button";
+import Button from "./../../components/Button/index";
 import SimpleListItem from "./../../components/SimpleListItem";
 import ListItem from "./../../components/ListItem";
 import Card from "./../../components/Card";
 import model from "./../../assets/me.jpeg";
 
+import { FiSettings } from "react-icons/fi";
 import { SideMenu, Container } from "./styles";
 
 const Main: React.FC = () => (
@@ -15,7 +16,7 @@ const Main: React.FC = () => (
         <h1>Lucy Andrews</h1>
         <strong>Head of Sales</strong>
       </header>
-      <Button></Button>
+      <Button icon={FiSettings}></Button>
 
       <h3>Direct colleagues</h3>
       <SimpleListItem />

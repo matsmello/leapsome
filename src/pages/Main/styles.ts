@@ -21,9 +21,6 @@ export const SideMenu = styled.div`
     }
   }
 
-  button {
-  }
-
   h3 {
   }
 `;
