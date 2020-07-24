@@ -5,7 +5,7 @@ import ListItem from "./../../components/ListItem/index";
 import Card from "./../../components/Card";
 import model from "./../../assets/me.jpeg";
 
-import { FiSettings, FiChevronDown } from "react-icons/fi";
+import { FiSettings, FiChevronDown, FiHelpCircle } from "react-icons/fi";
 import { SideMenu, Container } from "./styles";
 
 const Main: React.FC = () => {
@@ -44,7 +44,10 @@ const Main: React.FC = () => {
 
         <Button icon={FiSettings}></Button>
 
-        <h3>Direct colleagues</h3>
+        <h3>
+          Direct colleagues <FiHelpCircle />
+        </h3>
+
         <SimpleListItem />
         <SimpleListItem />
       </SideMenu>

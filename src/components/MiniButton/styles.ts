@@ -1,7 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { shade } from "polished";
 
-export const Container = styled.button`
+interface ButtonProps {
+  filled?: boolean;
+  filledColor?: string | null;
+}
+
+export const Container = styled.button<ButtonProps>`
   padding: 5px 10px;
   text-transform: uppercase;
   background: transparent;
@@ -28,4 +33,16 @@ export const Container = styled.button`
   & + button {
     margin-left: 10px;
   }
+
+  ${(props) =>
+    props.filled &&
+    css`
+      background: ${props.filledColor || "rgb(92, 131, 240)"};
+      border: 2px solid ${props.filledColor || "rgb(92, 131, 240)"};
+      color: white;
+
+      &:hover {
+        background: ${shade(0.05, props.filledColor || "rgb(92, 131, 240)")};
+      }
+    `}
 `;

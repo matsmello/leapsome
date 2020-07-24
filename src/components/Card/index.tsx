@@ -19,10 +19,13 @@ const Card: React.FC<CardProps> = (props) => (
       <h1>{props.title}</h1>
     </header>
 
-    {props.listItems &&
-      props.listItems.map((listItem) => (
-        <ListItem message={listItem.message} createdAt={listItem.createdAt} />
-      ))}
+    {props.listItems?.map((listItem) => (
+      <ListItem
+        message={listItem.message}
+        createdAt={listItem.createdAt}
+        actions={listItem.actions}
+      />
+    ))}
 
     <footer>
       <FiChevronDown />

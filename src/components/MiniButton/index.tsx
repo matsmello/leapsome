@@ -1,13 +1,20 @@
-import React, { InputHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import { Container } from "./styles";
 import { IconBaseProps } from "react-icons";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLInputElement> {
   icon?: React.ComponentType<IconBaseProps>;
+  filled?: boolean;
+  filledColor?: string | null;
 }
 
-const MiniButton: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
-  <Container>
+const MiniButton: React.FC<ButtonProps> = ({
+  filled,
+  filledColor,
+  icon: Icon,
+  ...props
+}) => (
+  <Container filled={filled} filledColor={filledColor}>
     {Icon && <Icon />}
     {props.children}
   </Container>

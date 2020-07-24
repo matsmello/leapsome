@@ -6,6 +6,7 @@ import meAgain from "./../../assets/meAgain.jpeg";
 interface ListItemProps {
   message: string;
   createdAt: string;
+  actions?: string[];
 }
 
 const ListItem: React.FC<ListItemProps> = (props) => (
@@ -14,8 +15,14 @@ const ListItem: React.FC<ListItemProps> = (props) => (
     <div>
       <strong>{props.message}</strong>
       <div>
-        <MiniButton>New</MiniButton>
-        <MiniButton>To Do</MiniButton>
+        {props.actions?.map((action) => (
+          <MiniButton
+            filled
+            filledColor={action == "New" ? null : "rgb(158,158,158)"}
+          >
+            {action}
+          </MiniButton>
+        ))}
         <p>{props.createdAt}</p>
       </div>
     </div>

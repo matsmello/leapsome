@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   flex: 1;
   display: flex;
-  border: 1px solid black;
 
   footer {
     padding: 25px 0;
@@ -21,12 +20,14 @@ export const Container = styled.div`
   }
 `;
 export const SideMenu = styled.div`
-  max-width: 280px;
+  max-width: 300px;
+  width: 30%;
+  min-width: 200px;
 
   header {
     img {
-      height: 100px;
-      width: 100px;
+      height: 140px;
+      width: 140px;
       border-radius: 50%;
     }
 
@@ -47,5 +48,13 @@ export const SideMenu = styled.div`
     font-weight: 400;
     color: rgb(120, 120, 120);
     font-size: 21px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+
+    svg {
+      margin-left: 15px;
+    }
   }
 `;
